@@ -1,4 +1,4 @@
-//
+    //
 //  ViewController.m
 //  Cycle Keeper
 //
@@ -13,15 +13,20 @@
 @end
 
 @implementation ViewController
+@synthesize lblSpeed;
+@synthesize currentSpeed = _currentSpeed;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.lblSpeed setFont:[UIFont fontWithName:@"LCDDot TR" size:60]];
+    [self.lblSpeed setText:@"666"];
 }
 
 - (void)viewDidUnload
 {
+    [self setLblSpeed:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

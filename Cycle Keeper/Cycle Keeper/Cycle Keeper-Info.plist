@@ -45,7 +45,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Supporting Files/lcddot_tr.ttf</string>
+		<string>lcddot_tr.ttf</string>
 	</array>
 </dict>
 </plist>
