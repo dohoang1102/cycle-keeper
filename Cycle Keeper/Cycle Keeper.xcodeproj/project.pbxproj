@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637291DA157874D300366A83 /* MyCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637291D9157874D300366A83 /* MyCLController.m */; };
 		63EA6A5915772B19001F723A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EA6A5815772B19001F723A /* UIKit.framework */; };
 		63EA6A5B15772B19001F723A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EA6A5A15772B19001F723A /* Foundation.framework */; };
 		63EA6A5D15772B19001F723A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EA6A5C15772B19001F723A /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		637291D8157874D300366A83 /* MyCLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCLController.h; sourceTree = "<group>"; };
+		637291D9157874D300366A83 /* MyCLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCLController.m; sourceTree = "<group>"; };
 		63EA6A5415772B19001F723A /* Cycle Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cycle Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EA6A5815772B19001F723A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63EA6A5A15772B19001F723A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +127,8 @@
 				63EA6A7015772B19001F723A /* ViewController.h */,
 				63EA6A7115772B19001F723A /* ViewController.m */,
 				63EA6A5F15772B19001F723A /* Supporting Files */,
+				637291D8157874D300366A83 /* MyCLController.h */,
+				637291D9157874D300366A83 /* MyCLController.m */,
 			);
 			path = "Cycle Keeper";
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				63EA6A6515772B19001F723A /* main.m in Sources */,
 				63EA6A6915772B19001F723A /* AppDelegate.m in Sources */,
 				63EA6A7215772B19001F723A /* ViewController.m in Sources */,
+				637291DA157874D300366A83 /* MyCLController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +449,7 @@
 				63EA6A8C15772B19001F723A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63EA6A8D15772B19001F723A /* Build configuration list for PBXNativeTarget "Cycle KeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +458,7 @@
 				63EA6A8F15772B19001F723A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,6 +20,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    locationController = [[MyCLController alloc] init];
+    locationController.delegate = self;
+    [locationController.locationManager startUpdatingLocation];
+    
     [self.lblSpeed setFont:[UIFont fontWithName:@"LCDDot TR" size:60]];
     [self.lblSpeed setText:@"666"];
 }
@@ -27,6 +31,7 @@
 - (void)viewDidUnload
 {
     [self setLblSpeed:nil];
+    locationController = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -38,6 +43,14 @@
     } else {
         return YES;
     }
+}
+-(void)locationUpdate:(CLLocation *)location
+{
+    [self.lblSpeed setText:[location description]];
+}
+-(void)locationError:(NSError *)error
+{
+    [self.lblSpeed setText:[error description]];
 }
 
 @end
